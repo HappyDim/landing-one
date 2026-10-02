@@ -1,25 +1,77 @@
-* {
-    margin: 0;
-    padding: 0;
-    
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: Arial, sans-serif;
+  color: #222;
+  line-height: 1.6;
 }
 
-html, body {
-    background-color: #181818;
-    font-size: 50px;
-    color: lightcyan;
-    font-family: sans-serif;
+.hero {
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: #fff;
+  text-align: center;
+  padding: 100px 20px;
 }
 
-p {
-    padding-left: 25px;
+.hero h1 { font-size: 42px; margin-bottom: 16px; }
+.hero p  { font-size: 18px; margin-bottom: 24px; }
+
+.btn {
+  display: inline-block;
+  background: #fff;
+  color: #2575fc;
+  padding: 12px 28px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
 }
 
-.good {
-    border-radius: 10px;
-    border: none;
-    font-size: 3rem;
-    margin: 15px;
-    
+.features {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  padding: 60px 20px;
+  flex-wrap: wrap;
 }
 
+.card {
+  background: #f4f4f8;
+  padding: 24px;
+  border-radius: 12px;
+  width: 260px;
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  padding: 30px;
+  background: #222;
+  color: #fff;
+  font-size: 14px;
+}
+footer a { color: #7bb1ff; }
+
+.about {
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;   /* центрируем дочерний блок по горизонтали */
+}
+
+.about-box {
+  width: 70%;                /* 70% ширины родителя */
+  background: #f9f9fc;
+  border: 1px solid #e4e4ee;
+  border-radius: 12px;
+  padding: 32px;
+  text-align: center;
+}
+
+.about-box h2 {
+  margin-bottom: 16px;
+  font-size: 28px;
+}
+
+.about-box p {
+  color: #444;
+  font-size: 16px;
+}
